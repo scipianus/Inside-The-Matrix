@@ -6,25 +6,39 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     1999 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.137 seconds
-Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside The Matrix\InsideTheMatrix_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.092 seconds
+Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 44.617725 ms
+UnloadTime: 1.022048 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1c14 -> priority: 1 
+  Thread -> id: 193c -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 12.842738 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 176.
+Total: 0.325002 ms (FindLiveObjects: 0.031217 ms CreateObjectMapping: 0.028651 ms MarkObjects: 0.245462 ms  DeleteObjects: 0.018388 ms)
+
+800 600
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+800 600
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+5.387936 27.58621 27.58621
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
