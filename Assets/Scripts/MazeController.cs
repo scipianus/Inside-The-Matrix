@@ -9,13 +9,16 @@ public class MazeController : MonoBehaviour {
     private float cellScale, cellWidth, cellHeight;
     private GameObject[,] drawnCells;
     private GameObject[,,] drawnWalls;
+    private GameObject player;
 
     // Use this for initialization
     void Start() {
+        player = GameObject.Find("Player");
         Renderer renderer = cryptWall.GetComponent<Renderer>();
         cellScale = Mathf.Min(Screen.width / (width + 4f), Screen.height / (height + 4f)) / (renderer.bounds.extents[0] * 2f); 
         cellWidth = renderer.bounds.extents[0] * cellScale * 2f;
         cellHeight = renderer.bounds.extents[1] * cellScale * 2f;
+        player.transform.localScale = Vector3.one * cellScale * 2f;
         Debug.Log(Screen.width + " " + Screen.height);
         Debug.Log(Screen.currentResolution.width + " " + Screen.currentResolution.height);
         Debug.Log(cellScale + " " + cellWidth + " " + cellHeight);
