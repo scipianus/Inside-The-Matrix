@@ -3,11 +3,14 @@ using System.Collections;
 
 public class CharacterController : MonoBehaviour {
     public float speed = 1f;
+    public int finalLine, finalColumn;
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+        MazeController script = GameObject.Find("Canvas").GetComponent<MazeController>();
+        finalLine = script.finalLine;
+        finalColumn = script.finalColumn;
+    }
 	
 	// Update is called once per frame
 	void Update () {
