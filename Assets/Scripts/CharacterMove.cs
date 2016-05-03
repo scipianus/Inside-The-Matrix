@@ -3,13 +3,6 @@ using System.Collections;
 
 public class CharacterMove : MonoBehaviour {
     public float speed = 1f;
-    public int finalLine, finalColumn;
-
-	// Use this for initialization
-	void Start () {
-        finalLine = MazeGenerator.finalLine;
-        finalColumn = MazeGenerator.finalColumn;
-    }
 	
 	// Update is called once per frame
 	void Update () {

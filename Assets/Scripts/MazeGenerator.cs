@@ -4,7 +4,7 @@ using System.Collections;
 public class MazeGenerator : MonoBehaviour {
 
     public static int width, height;
-    public static int finalLine, finalColumn;
+    public int finalLine, finalColumn;
     private byte[,,] matrix;
     public GameObject wallPrefab, landPrefab, exitPrefab;
     private float cellScale, cellWidth, cellHeight;
