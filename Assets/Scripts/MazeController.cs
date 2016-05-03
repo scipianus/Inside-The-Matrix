@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MazeController : MonoBehaviour {
 
-    public int width, height;
+    public static int width, height;
     public int finalLine, finalColumn;
     private byte[,,] matrix;
     public GameObject wallPrefab, landPrefab, exitPrefab;
@@ -21,9 +21,9 @@ public class MazeController : MonoBehaviour {
         cellWidth = renderer.bounds.extents[0] * cellScale * 2f;
         cellHeight = renderer.bounds.extents[1] * cellScale * 2f;
         player.transform.localScale = Vector3.one * cellScale * 2f;
-        Debug.Log(Screen.width + " " + Screen.height);
-        Debug.Log(Screen.currentResolution.width + " " + Screen.currentResolution.height);
-        Debug.Log(cellScale + " " + cellWidth + " " + cellHeight);
+        //Debug.Log(Screen.width + " " + Screen.height);
+        //Debug.Log(Screen.currentResolution.width + " " + Screen.currentResolution.height);
+        //Debug.Log(cellScale + " " + cellWidth + " " + cellHeight);
 
         generateRandomMaze();
         drawWalls();
@@ -69,7 +69,7 @@ public class MazeController : MonoBehaviour {
         int pos = positions[Random.Range(0, cnt - 1)];
         finalLine = pos / 10000;
         finalColumn = pos % 10000;
-        Debug.Log("Iesirea este la " + finalLine + " , " + finalColumn);
+        //Debug.Log("Iesirea este la " + finalLine + " , " + finalColumn);
 
         Renderer renderer = drawnCells[finalLine, finalColumn].GetComponent<Renderer>();
         renderer.enabled = false;

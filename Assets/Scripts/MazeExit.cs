@@ -15,4 +15,11 @@ public class MazeExit : MonoBehaviour {
             SceneManager.LoadScene("GameOver");
         }
     }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
 }

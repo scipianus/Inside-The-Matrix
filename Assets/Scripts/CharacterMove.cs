@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterController : MonoBehaviour {
+public class CharacterMove : MonoBehaviour {
     public float speed = 1f;
     public int finalLine, finalColumn;
 
