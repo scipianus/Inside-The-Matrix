@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MazeController : MonoBehaviour {
+public class MazeGenerator : MonoBehaviour {
 
     public static int width, height;
-    public int finalLine, finalColumn;
+    public static int finalLine, finalColumn;
     private byte[,,] matrix;
     public GameObject wallPrefab, landPrefab, exitPrefab;
     private float cellScale, cellWidth, cellHeight;

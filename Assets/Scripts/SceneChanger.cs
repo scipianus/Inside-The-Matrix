@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class MainMenuManager : MonoBehaviour
+public class SceneChanger : MonoBehaviour
 {
 
     public void LoadScene(string sceneName)

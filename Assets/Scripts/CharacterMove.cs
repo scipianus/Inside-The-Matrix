@@ -7,9 +7,8 @@ public class CharacterMove : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        MazeController script = GameObject.Find("Canvas").GetComponent<MazeController>();
-        finalLine = script.finalLine;
-        finalColumn = script.finalColumn;
+        finalLine = MazeGenerator.finalLine;
+        finalColumn = MazeGenerator.finalColumn;
     }
 	
 	// Update is called once per frame
