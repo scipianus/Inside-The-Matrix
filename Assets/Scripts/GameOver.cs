@@ -13,11 +13,8 @@ public class GameOver : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         label = GameObject.Find("GameOverText").GetComponent<Text>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        switch(gameMode) {
+        switch (gameMode)
+        {
             case 1:
                 label.text = gameOver + "Your time was " + time;
                 break;
@@ -25,5 +22,5 @@ public class GameOver : MonoBehaviour {
                 label.text = gameOver;
                 break;
         }
-	}
+    }
 }
