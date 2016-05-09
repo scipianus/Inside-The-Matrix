@@ -4,7 +4,7 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
     Renderer: NVIDIA GeForce GT 540M            (ID=0xdf4)
     Vendor:   NVIDIA
-    VRAM:     1999 MB
+    VRAM:     1995 MB
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -14,7 +14,7 @@ Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideThe
 Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.327 seconds
+- Completed reload, in  0.057 seconds
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
@@ -22,30 +22,54 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.715434 ms
+UnloadTime: 1.185833 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 508 -> priority: 1 
+  Thread -> id: d94 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.702331 ms
+UnloadTime: 6.030946 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 219.
-Total: 0.291219 ms (FindLiveObjects: 0.029079 ms CreateObjectMapping: 0.015394 ms MarkObjects: 0.238620 ms  DeleteObjects: 0.007269 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 249.
+Total: 0.318588 ms (FindLiveObjects: 0.057303 ms CreateObjectMapping: 0.031645 ms MarkObjects: 0.219804 ms  DeleteObjects: 0.007697 ms)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.512734 ms
+Upload Successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 253.
-Total: 0.455859 ms (FindLiveObjects: 0.028223 ms CreateObjectMapping: 0.019671 ms MarkObjects: 0.392569 ms  DeleteObjects: 0.014111 ms)
+Upload Successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.039154 ms
+Upload Successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 191.
-Total: 0.326713 ms (FindLiveObjects: 0.020954 ms CreateObjectMapping: 0.017533 ms MarkObjects: 0.189442 ms  DeleteObjects: 0.097928 ms)
+Upload Successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Upload Successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Upload Successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Upload Successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Upload Successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Upload Successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.505892 ms
+UnloadTime: 0.677374 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 212.
-Total: 0.425069 ms (FindLiveObjects: 0.032500 ms CreateObjectMapping: 0.010690 ms MarkObjects: 0.374181 ms  DeleteObjects: 0.007269 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 214.
+Total: 0.360924 ms (FindLiveObjects: 0.049178 ms CreateObjectMapping: 0.050461 ms MarkObjects: 0.252305 ms  DeleteObjects: 0.007697 ms)
 
