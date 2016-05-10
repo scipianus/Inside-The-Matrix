@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DisplayHighscores.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameOver.cs">
     <Files>
-      <File FileName="Assets\Scripts\Highscores.cs" Line="25" Column="72" />
-      <File FileName="Assets\Scripts\DisplayHighscores.cs" Line="35" Column="4" />
+      <File FileName="Assets\Scripts\Highscores.cs" Line="90" Column="24" />
+      <File FileName="Assets\Scripts\DisplayHighscores.cs" Line="27" Column="36" />
+      <File FileName="Assets\Scripts\GameOver.cs" Line="22" Column="55" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

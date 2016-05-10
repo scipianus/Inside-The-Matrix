@@ -14,18 +14,11 @@ public class Highscores : MonoBehaviour {
 		"5730d7196e51b900904063d8"
 		};
 	const string webURL = "http://dreamlo.com/lb/";
+	public readonly static int BIG_VALUE = 1000000000;
 
 	DisplayHighscores highscoreDisplay;
 	public Highscore[] highscoresList;
 	static Highscores instance;
-
-	void Start() {
-		for (int i = 0; i < 3; ++i) {
-			for (int j = 0; j < 3; ++j) {
-				AddNewHighscore (((i + j + 2) * j * (i + 9) + (j + 1) * (i + j + 7)) % 100 + 10, i);
-			}
-		}
-	}
 
 	void Awake() {
 		highscoreDisplay = GetComponent<DisplayHighscores> ();
@@ -61,7 +54,8 @@ public class Highscores : MonoBehaviour {
 
 			if (string.IsNullOrEmpty (www.error)) {
 				FormatHighscores (www.text);
-				highscoreDisplay.OnHighscoresDownloaded (highscoresList, i);
+				if(highscoreDisplay != null)
+					highscoreDisplay.OnHighscoresDownloaded (highscoresList, i);
 			} else {
 				print ("Error Downloading: " + www.error);
 			}
@@ -85,10 +79,16 @@ public class Highscores : MonoBehaviour {
 public struct Highscore {
 	public string username;
 	public int score;
+	public string time;
 
 	public Highscore(string _username, int _score) {
 		username = _username;
 		score = _score;
+
+		int timeInt = Highscores.BIG_VALUE - score;
+		int minutes = timeInt / 60;
+		int seconds = timeInt % 60;
+		time = string.Format("{0:00}:{1:00}", minutes, seconds);
 	}
 
 }

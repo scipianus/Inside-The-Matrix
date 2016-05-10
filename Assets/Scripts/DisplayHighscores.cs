@@ -24,7 +24,10 @@ public class DisplayHighscores : MonoBehaviour {
 		for (int j = 0; j < 3; ++j) {
 			highscoreFields[gameMode, j].text = j + 1 + ". ";
 			if (j < highscoreList.Length) {
-				highscoreFields[gameMode, j].text += highscoreList[j].username + " - " + highscoreList[j].score;
+				if (gameMode < 0 || gameMode >= 3)
+					highscoreFields [gameMode, j].text += highscoreList [j].username + " - " + highscoreList [j].score;
+				else
+					highscoreFields [gameMode, j].text += highscoreList [j].time;
 			}
 		}
 	}

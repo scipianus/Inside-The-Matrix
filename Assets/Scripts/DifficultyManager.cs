@@ -10,5 +10,6 @@ public class DifficultyManager : MonoBehaviour {
     {
         MazeGenerator.width = width[difficulty];
         MazeGenerator.height = height[difficulty];
+		GameOver.gameMode = difficulty;
     }
 }
