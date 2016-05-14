@@ -16,6 +16,8 @@ public class GameGridLogic : MonoBehaviour {
     private int[,] cellNumber;
     private int currentCellX, currentCellY;
 
+    public int currentStep = 0;
+
 	void Start () {
         // Initialize and allocate resources
         cell = Resources.Load<SpriteRenderer>("Prefabs/Square");
@@ -144,6 +146,8 @@ public class GameGridLogic : MonoBehaviour {
         }
 
         if (gotInput && isMoveLegal(newCellX, newCellY)) {
+            currentStep = currentStep + 1;
+            Debug.Log(currentStep);
             updateCells(currentCellX, currentCellY, newCellX, newCellY);
             currentCellX = newCellX;
             currentCellY = newCellY;
