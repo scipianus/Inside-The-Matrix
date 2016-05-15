@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 
 public class GameGridLogic : MonoBehaviour {
-    private const int gridDimension = 6;
+    public static int gridDimension = 6;
     private const float posXdifference = 0.013f;
     private static Vector3 digitPosDifference = new Vector3(0.014f, 0.0f, 0.0f);
 

@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\CharacterAnimator.cs" />
     <Compile Include="Assets\Scripts\CharacterAudio.cs" />
     <Compile Include="Assets\Scripts\CharacterMove.cs" />
+    <Compile Include="Assets\Scripts\DifficultyGame2.cs" />
     <Compile Include="Assets\Scripts\DifficultyManager.cs" />
     <Compile Include="Assets\Scripts\DisplayHighscores.cs" />
     <Compile Include="Assets\Scripts\GameGridLogic.cs" />

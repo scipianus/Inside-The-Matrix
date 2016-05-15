@@ -9,6 +9,7 @@ public class SceneChanger : MonoBehaviour
 	void Start()
 	{
 		audioSource = GameObject.Find ("Audio Source").GetComponent<AudioSource> () as AudioSource;
+        Debug.Log(audioSource);
 	}
 
     public void LoadScene(string sceneName)
