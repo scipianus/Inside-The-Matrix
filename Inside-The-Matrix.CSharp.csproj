@@ -71,6 +71,10 @@
     <Compile Include="Assets\Scripts\DifficultyGame2.cs" />
     <Compile Include="Assets\Scripts\DifficultyManager.cs" />
     <Compile Include="Assets\Scripts\DisplayHighscores.cs" />
+    <Compile Include="Assets\Scripts\Game2_Cell.cs" />
+    <Compile Include="Assets\Scripts\Game2_KeyEvents.cs" />
+    <Compile Include="Assets\Scripts\Game2_MazeGenerator.cs" />
+    <Compile Include="Assets\Scripts\Game2_Pair.cs" />
     <Compile Include="Assets\Scripts\GameGridLogic.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Highscores.cs" />
