@@ -20,7 +20,14 @@ public class MazeGenerator : MonoBehaviour {
         cellScale = 10f; 
         cellWidth = renderer.bounds.extents[0] * cellScale * 2f;
         cellHeight = renderer.bounds.extents[1] * cellScale * 2f;
-        player.transform.localScale = Vector3.one * cellScale * 2f;
+		if (player != null) // single player
+        	player.transform.localScale = Vector3.one * cellScale * 2f;
+		else { // multiplayer
+			for (int i = 1; i <= 2; ++i) {
+				player = GameObject.Find ("Player" + i);
+				player.transform.localScale = Vector3.one * cellScale * 2f;
+			}
+		}
         //Debug.Log(Screen.width + " " + Screen.height);
         //Debug.Log(Screen.currentResolution.width + " " + Screen.currentResolution.height);
         //Debug.Log(cellScale + " " + cellWidth + " " + cellHeight);
