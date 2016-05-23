@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class TimePassed : MonoBehaviour {
     private Text timerLabel;
     private GameObject target;
-    public float time;
+    public float time = 0;
     // Use this for initialization
     void Start () {
         timerLabel = this.GetComponent<Text>();

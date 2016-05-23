@@ -6,8 +6,15 @@ using System;
 public class GameGridLogic : MonoBehaviour {
     public static int gridDimension = 6;
     private int[,] cellNumber;
+    private int[,] initialCellNumber;
     private Cell[,] cells;
     private Pair<int, int> currentCell;
+    private Pair<int, int> endCell;
+    private List<Pair<int, int>> path;
+    private float time;
+
+    public GameObject GameOverScreen;
+
 
     public int currentStep = 0;
 
@@ -30,16 +37,25 @@ public class GameGridLogic : MonoBehaviour {
     public void generateCells() {
         System.Random rnd = new System.Random();
 
-        List<Pair<int, int>> path = Game2_MazeGenerator.generatePath(gridDimension);
+        path = Game2_MazeGenerator.generatePath(gridDimension);
         cellNumber = Game2_MazeGenerator.generateMaze(gridDimension, path);
+        initialCellNumber = new int[gridDimension, gridDimension];
+        //Preserver the initial cell numbers in another array
+        for(int i = 0; i < gridDimension; i++) {
+            for(int j = 0; j < gridDimension; j++) {
+                initialCellNumber[i, j] = cellNumber[i, j];    
+            }
+        }
         currentCell = path[0];
-
+        endCell = path[path.Count - 1];
         for(int i = 0; i < gridDimension; ++i)
             for (int j = 0; j < gridDimension; ++j) {
                 cells[i, j].setText(cellNumber[i, j].ToString());
-                if (path.Contains(new Pair<int, int>(i, j)))
-                    cells[i, j].setColor(Color.cyan);
+               // if (path.Contains(new Pair<int, int>(i, j)))
+                //    cells[i, j].setColor(Color.cyan);
             }
+        cells[currentCell.fst, currentCell.snd].setColor(Color.green);
+        cells[endCell.fst, endCell.snd].setColor(Color.yellow);
     }
 
     public void updateCells(Pair<int, int> oldCell, Pair<int, int> newCell) {
@@ -53,6 +69,19 @@ public class GameGridLogic : MonoBehaviour {
                     cells[i, j].setText(cellNumber[i, j].ToString());
                 }
             }
+        //Check if the newCell is the final path cell
+        //If so, print completion screen
+       if(newCell.fst == endCell.fst && newCell.snd == endCell.snd) {
+            time = Time.timeSinceLevelLoad;
+            Debug.Log(time);
+            GameOverVisibility gameScreen =  GameOverScreen.GetComponent<GameOverVisibility>();
+            // Take into consideration the zie of the grid when computing the penalty for extra steps
+            float stepScaler = currentStep - path.Count + 20;
+            float timeScaler = ((15 - time) > 0) ? 15 - time : 0; 
+            float score = timeScaler + stepScaler;
+
+            gameScreen.becomeVisible(score); 
+        }
     }
 
     public Pair<int, int> getCurrentCell() {
@@ -71,6 +100,23 @@ public class GameGridLogic : MonoBehaviour {
         this.currentStep = currentStep;
     }
 	
+    public void Retry() {
+        for (int i = 0; i < gridDimension; i++)
+            for (int j = 0; j < gridDimension; j++)
+                cellNumber[i, j] = initialCellNumber[i, j];
+        currentStep = 0;
+        currentCell = path[0];
+        for(int i = 0; i < gridDimension; ++i)
+            for (int j = 0; j < gridDimension; ++j) {
+                cells[i, j].setText(cellNumber[i, j].ToString());
+                if(cellNumber[i,j] != 0)
+                    cells[i, j].setColor(Color.red);
+              //  if (path.Contains(new Pair<int, int>(i, j)))
+               //     cells[i, j].setColor(Color.cyan);
+            }
+     cells[currentCell.fst, currentCell.snd].setColor(Color.green);
+        cells[endCell.fst, endCell.snd].setColor(Color.yellow);
+    }
 	void Update () {
 
     }
