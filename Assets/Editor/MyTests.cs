@@ -6,12 +6,16 @@ using System.Collections;
 public class MyTests {
 
 	[Test]
-	public void ValidMazeMatrixValues()
+	public void ValidMazeMatrix()
 	{
 		int height = Random.Range (5, 25);
 		int width = Random.Range (5, 25);
 		MazeGenerator mazeGenerator = new MazeGenerator (height, width);
 		byte[,,] matrix = mazeGenerator.generateRandomMaze ();
+		Assert.IsNotNull (matrix);
+		Assert.That (matrix.GetLength (0) == height);
+		Assert.That (matrix.GetLength (1) == width);
+		Assert.That (matrix.GetLength (2) == 2);
 		for (int i = 0; i < height; ++i)
 			for (int j = 0; j < width; ++j)
 				for (int k = 0; k < 2; ++k)

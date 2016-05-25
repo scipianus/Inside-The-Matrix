@@ -2,7 +2,7 @@ Initialize engine version: 5.3.4f1 (fdbb5133b820)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GT 540M            (ID=0xdf4)
+    Renderer: NVIDIA GeForce GT 540M (ID=0xdf4)
     Vendor:   NVIDIA
     VRAM:     1995 MB
 Begin MonoManager ReloadAssembly
@@ -19,65 +19,8 @@ Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideThe
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.786422 ms
+UnloadTime: 0.766752 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 704 -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.739972 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 231.
-Total: 0.349378 ms (FindLiveObjects: 0.052171 ms CreateObjectMapping: 0.019671 ms MarkObjects: 0.264706 ms  DeleteObjects: 0.010690 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.539249 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 270.
-Total: 0.300628 ms (FindLiveObjects: 0.058586 ms CreateObjectMapping: 0.030362 ms MarkObjects: 0.195857 ms  DeleteObjects: 0.013256 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.687638 ms
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 206.
-Total: 0.342964 ms (FindLiveObjects: 0.014111 ms CreateObjectMapping: 0.018815 ms MarkObjects: 0.200133 ms  DeleteObjects: 0.108619 ms)
-
-Upload Successful
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-Upload Successful
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.466123 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 237.
-Total: 0.343391 ms (FindLiveObjects: 0.057730 ms CreateObjectMapping: 0.031217 ms MarkObjects: 0.241614 ms  DeleteObjects: 0.010263 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.568755 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 231.
-Total: 0.336121 ms (FindLiveObjects: 0.058586 ms CreateObjectMapping: 0.017960 ms MarkObjects: 0.247173 ms  DeleteObjects: 0.009835 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.519150 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 280.
-Total: 0.272404 ms (FindLiveObjects: 0.023947 ms CreateObjectMapping: 0.020098 ms MarkObjects: 0.213390 ms  DeleteObjects: 0.014111 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.741520 ms
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 206.
-Total: 0.415234 ms (FindLiveObjects: 0.051743 ms CreateObjectMapping: 0.056020 ms MarkObjects: 0.202271 ms  DeleteObjects: 0.103060 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.526847 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 237.
-Total: 0.278818 ms (FindLiveObjects: 0.012829 ms CreateObjectMapping: 0.012401 ms MarkObjects: 0.243752 ms  DeleteObjects: 0.008980 ms)
-
+  Thread -> id: 98c -> priority: 1 
