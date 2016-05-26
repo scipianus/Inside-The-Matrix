@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Highscores.cs" />
      <Compile Include="Assets\Scripts\MazeExit.cs" />
      <Compile Include="Assets\Scripts\MazeGenerator.cs" />
+     <Compile Include="Assets\Scripts\MazeGeneratorWrapper.cs" />
      <Compile Include="Assets\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\VolumeControl.cs" />

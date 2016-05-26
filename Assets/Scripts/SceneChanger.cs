@@ -14,7 +14,7 @@ public class SceneChanger : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-		if (sceneName == "Game1" || sceneName == "Game2")
+		if (sceneName == "Game1" || sceneName == "Game1M" || sceneName == "Game2")
 			audioSource.Pause ();
 		else if (!audioSource.isPlaying)
 			audioSource.Play ();

@@ -2,7 +2,7 @@ Initialize engine version: 5.3.4f1 (fdbb5133b820)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GT 540M            (ID=0xdf4)
+    Renderer: NVIDIA GeForce GT 540M (ID=0xdf4)
     Vendor:   NVIDIA
     VRAM:     1995 MB
 Begin MonoManager ReloadAssembly
@@ -14,50 +14,13 @@ Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideThe
 Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.052 seconds
+- Completed reload, in  0.144 seconds
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.674382 ms
+UnloadTime: 0.766752 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 142c -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.552426 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 224.
-Total: 0.292075 ms (FindLiveObjects: 0.038059 ms CreateObjectMapping: 0.039342 ms MarkObjects: 0.205692 ms  DeleteObjects: 0.008125 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.647868 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 227.
-Total: 0.224508 ms (FindLiveObjects: 0.017533 ms CreateObjectMapping: 0.010263 ms MarkObjects: 0.179607 ms  DeleteObjects: 0.016677 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.514446 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 224.
-Total: 0.206975 ms (FindLiveObjects: 0.017533 ms CreateObjectMapping: 0.010690 ms MarkObjects: 0.164639 ms  DeleteObjects: 0.006842 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.535400 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 227.
-Total: 0.347668 ms (FindLiveObjects: 0.044474 ms CreateObjectMapping: 0.052599 ms MarkObjects: 0.239048 ms  DeleteObjects: 0.009835 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.535827 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 258.
-Total: 0.347240 ms (FindLiveObjects: 0.041908 ms CreateObjectMapping: 0.034210 ms MarkObjects: 0.255298 ms  DeleteObjects: 0.014111 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.630763 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 227.
-Total: 0.379740 ms (FindLiveObjects: 0.056875 ms CreateObjectMapping: 0.051743 ms MarkObjects: 0.254871 ms  DeleteObjects: 0.014539 ms)
-
+  Thread -> id: 98c -> priority: 1 
