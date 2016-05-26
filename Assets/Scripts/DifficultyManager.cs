@@ -8,8 +8,8 @@ public class DifficultyManager : MonoBehaviour {
 
     public void setGame1Difficulty(int difficulty)
     {
-        MazeGenerator.width = width[difficulty];
-        MazeGenerator.height = height[difficulty];
+        MazeGeneratorWrapper.width = width[difficulty];
+		MazeGeneratorWrapper.height = height[difficulty];
 		GameOver.gameMode = difficulty;
     }
 }
