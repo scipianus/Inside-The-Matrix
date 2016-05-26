@@ -58,6 +58,12 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -72,6 +78,7 @@
     <Compile Include="Assets\Scripts\DifficultyGame2.cs" />
     <Compile Include="Assets\Scripts\DifficultyManager.cs" />
     <Compile Include="Assets\Scripts\DisplayHighscores.cs" />
+    <Compile Include="Assets\Scripts\Game2Camera.cs" />
     <Compile Include="Assets\Scripts\Game2_Cell.cs" />
     <Compile Include="Assets\Scripts\Game2_KeyEvents.cs" />
     <Compile Include="Assets\Scripts\Game2_MazeGenerator.cs" />
@@ -82,6 +89,7 @@
     <Compile Include="Assets\Scripts\HowToPlayPopUp.cs" />
     <Compile Include="Assets\Scripts\MazeExit.cs" />
     <Compile Include="Assets\Scripts\MazeGenerator.cs" />
+    <Compile Include="Assets\Scripts\MazeGeneratorWrapper.cs" />
     <Compile Include="Assets\Scripts\SceneChanger.cs" />
     <Compile Include="Assets\Scripts\TimePassed.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
