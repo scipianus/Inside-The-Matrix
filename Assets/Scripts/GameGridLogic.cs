@@ -36,16 +36,15 @@ public class GameGridLogic : MonoBehaviour {
 
     public void generateCells() {
         System.Random rnd = new System.Random();
-
         path = Game2_MazeGenerator.generatePath(gridDimension);
         cellNumber = Game2_MazeGenerator.generateMaze(gridDimension, path);
         initialCellNumber = new int[gridDimension, gridDimension];
+
         //Preserver the initial cell numbers in another array
-        for(int i = 0; i < gridDimension; i++) {
-            for(int j = 0; j < gridDimension; j++) {
+        for(int i = 0; i < gridDimension; i++)
+            for(int j = 0; j < gridDimension; j++)
                 initialCellNumber[i, j] = cellNumber[i, j];    
-            }
-        }
+
         currentCell = path[0];
         endCell = path[path.Count - 1];
         for(int i = 0; i < gridDimension; ++i)
@@ -54,8 +53,20 @@ public class GameGridLogic : MonoBehaviour {
                // if (path.Contains(new Pair<int, int>(i, j)))
                 //    cells[i, j].setColor(Color.cyan);
             }
+
         cells[currentCell.fst, currentCell.snd].setColor(Color.green);
         cells[endCell.fst, endCell.snd].setColor(Color.yellow);
+    }
+
+    public void endGame() {
+        time = Time.timeSinceLevelLoad;
+        GameOverVisibility gameScreen =  GameOverScreen.GetComponent<GameOverVisibility>();
+        // Take into consideration the size of the grid when computing the penalty for extra steps
+        float stepScaler = currentStep - path.Count + 20;
+        float timeScaler = ((15 - time) > 0) ? 15 - time : 0; 
+        float score = timeScaler + stepScaler;
+        gameScreen.becomeVisible(score);
+		Game2_Writer.appendLeaderboardFile("Catalin", score);
     }
 
     public void updateCells(Pair<int, int> oldCell, Pair<int, int> newCell) {
@@ -69,19 +80,9 @@ public class GameGridLogic : MonoBehaviour {
                     cells[i, j].setText(cellNumber[i, j].ToString());
                 }
             }
-        //Check if the newCell is the final path cell
-        //If so, print completion screen
-       if(newCell.fst == endCell.fst && newCell.snd == endCell.snd) {
-            time = Time.timeSinceLevelLoad;
-            Debug.Log(time);
-            GameOverVisibility gameScreen =  GameOverScreen.GetComponent<GameOverVisibility>();
-            // Take into consideration the zie of the grid when computing the penalty for extra steps
-            float stepScaler = currentStep - path.Count + 20;
-            float timeScaler = ((15 - time) > 0) ? 15 - time : 0; 
-            float score = timeScaler + stepScaler;
 
-            gameScreen.becomeVisible(score); 
-        }
+        if (newCell == endCell)
+            endGame();
     }
 
     public Pair<int, int> getCurrentCell() {
@@ -104,6 +105,7 @@ public class GameGridLogic : MonoBehaviour {
         for (int i = 0; i < gridDimension; i++)
             for (int j = 0; j < gridDimension; j++)
                 cellNumber[i, j] = initialCellNumber[i, j];
+
         currentStep = 0;
         currentCell = path[0];
         for(int i = 0; i < gridDimension; ++i)
@@ -114,9 +116,11 @@ public class GameGridLogic : MonoBehaviour {
               //  if (path.Contains(new Pair<int, int>(i, j)))
                //     cells[i, j].setColor(Color.cyan);
             }
-     cells[currentCell.fst, currentCell.snd].setColor(Color.green);
+
+        cells[currentCell.fst, currentCell.snd].setColor(Color.green);
         cells[endCell.fst, endCell.snd].setColor(Color.yellow);
     }
+
 	void Update () {
 
     }

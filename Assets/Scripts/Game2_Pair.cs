@@ -18,4 +18,12 @@ public class Pair<T, U> : System.IEquatable<Pair<T, U>> {
     public bool Equals(Pair<T, U> rhs) {
         return Equals(fst, rhs.fst) && Equals(snd, rhs.snd);
     }
+
+    public static bool operator == (Pair<T, U> lhs, Pair<T, U> rhs) {
+        return lhs.Equals(rhs);
+    }
+
+    public static bool operator != (Pair<T, U> lhs, Pair<T, U> rhs) {
+        return !(lhs == rhs);
+    }
 };
