@@ -36,7 +36,7 @@ public class GameGridLogic : MonoBehaviour {
 
     public void generateCells() {
         System.Random rnd = new System.Random();
-        path = Game2_MazeGenerator.generatePath(gridDimension);
+        path = Game2_Reader.getRandomPath();
         cellNumber = Game2_MazeGenerator.generateMaze(gridDimension, path);
         initialCellNumber = new int[gridDimension, gridDimension];
 

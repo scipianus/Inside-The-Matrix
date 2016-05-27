@@ -8,10 +8,9 @@ public class Game2_MazeGenerator {
     private static Pair<int, int> down = new Pair<int, int>(1, 0);
     private static List<Pair<int, int>> directions = new List<Pair<int, int>> { right, up, down };
 
-    public static List<Pair<int, int>> generatePath(int dimension) {
+    public static List<Pair<int, int>> generatePath(int dimension, System.Random rnd) {
         List<Pair<int, int>> path = new List<Pair<int, int>>();
         Pair<int, int> currentCell = new Pair<int, int>();
-        System.Random rnd = new System.Random();
 
         currentCell.fst = rnd.Next(0, dimension);
         currentCell.snd = 0;
@@ -67,5 +66,41 @@ public class Game2_MazeGenerator {
             }
 
         return maze;
+    }
+
+    public static bool directionChanged(Pair<int, int> p1, Pair<int, int> p2, Pair<int, int> p3) {
+        if ((p2.fst - p1.fst == p3.fst - p2.fst) ||
+            (p2.snd - p1.snd == p3.snd - p2.snd))
+            return false;
+        return true;
+    }
+
+	public static int evaluate(List<Pair<int, int>> path) {
+        int value = 0;
+
+        value += path.Count;
+        for (int i = 2; i < path.Count; ++i)
+            if (directionChanged(path[i - 2], path[i - 1], path[i]))
+                value += 5;
+
+        return value;
+	}
+
+    public static void generatePaths(int number, int dimension) {
+        List<Pair<int, List<Pair<int, int>>>> paths = new List<Pair<int, List<Pair<int, int>>>>();
+        System.Random rnd = new System.Random();
+        int generateNumber = number * 100;
+        for (int i = 0; i < generateNumber; ++i) {
+            List<Pair<int, int>> path = Game2_MazeGenerator.generatePath(dimension, rnd);
+            int value = evaluate(path);
+            paths.Add(new Pair<int, List<Pair<int, int>>>(value, path));
+        }
+
+        paths.Sort((x, y) => y.fst.CompareTo(x.fst));
+
+        Game2_Writer.refreshPathsFile();
+        for (int i = 0; i < number; ++i) {
+            Game2_Writer.appendPathsFile(paths[i].fst, paths[i].snd);
+        }
     }
 }

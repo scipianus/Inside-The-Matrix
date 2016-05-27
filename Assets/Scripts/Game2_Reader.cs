@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.IO;
 
 public class Game2_Reader {
@@ -25,4 +26,17 @@ public class Game2_Reader {
 		StreamReader fileStream = new StreamReader(leaderboardFilePath);
 		return fileStream.ReadToEnd();
 	}
+
+    public static List<Pair<int, int>> getRandomPath() {
+        List<Pair<int, int>> path = new List<Pair<int, int>>();
+        StreamReader fileStream = new StreamReader(pathsFilePath);
+        System.Random rnd = new System.Random();
+        List<string> paths = File.ReadAllLines(pathsFilePath).ToList();
+
+        int idx = rnd.Next(0, paths.Count);
+        string[] parsedLine = paths[idx].Split(' ');
+        for (int i = 1; i < parsedLine.Length; i += 2)
+            path.Add(new Pair<int, int>(int.Parse(parsedLine[i]), int.Parse(parsedLine[i + 1])));
+        return path;
+    }
 }

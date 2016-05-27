@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 
 public class Game2_Writer {
@@ -34,7 +34,11 @@ public class Game2_Writer {
 		appenToFile(leaderboardFilePath, name + " " + score);
 	}
 
-	public static void appendPathsFile() {
-
+	public static void appendPathsFile(int pathScore, List<Pair<int, int>> path) {
+        string line = pathScore.ToString();
+        for (int i = 0; i < path.Count; ++i) {
+            line += " " + path[i].fst + " " + path[i].snd;
+        }
+        appenToFile(pathsFilePath, line);
 	}
 }
