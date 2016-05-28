@@ -65,7 +65,6 @@ public class GameGridLogic : MonoBehaviour {
         float timeScaler = ((15 - time) > 0) ? 15 - time : 0; 
         float score = timeScaler + stepScaler;
         gameScreen.becomeVisible(score);
-		Game2_Writer.appendLeaderboardFile("Catalin", score);
     }
 
     public void updateCells(Pair<int, int> oldCell, Pair<int, int> newCell) {

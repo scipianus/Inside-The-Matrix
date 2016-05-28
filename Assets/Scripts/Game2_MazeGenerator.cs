@@ -9,6 +9,12 @@ public class Game2_MazeGenerator {
     private static Pair<int, int> down = new Pair<int, int>(1, 0);
     private static List<Pair<int, int>> directions = new List<Pair<int, int>> { right, up, down };
 
+    /*
+     @ pure
+     @ requires dimension > 0
+     @ requires rnd != null
+     @ ensures path != null
+     */
     public static List<Pair<int, int>> generatePath(int dimension, System.Random rnd) {
         List<Pair<int, int>> path = new List<Pair<int, int>>();
         Pair<int, int> currentCell = new Pair<int, int>();
@@ -70,6 +76,13 @@ public class Game2_MazeGenerator {
         return idx;
     }
 
+
+    /*
+     @ pure
+     @ requires dimension > 0
+     @ requires path != null
+     @ ensures maze != null
+     */
     public static int[,] generateMaze(int dimension, List<Pair<int, int>> path) {
         System.Random rnd = new System.Random();
         int[,] maze = new int[dimension, dimension];

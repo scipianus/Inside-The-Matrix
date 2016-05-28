@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Game2_LoadLeaderboard.cs" />
     <Compile Include="Assets\Scripts\Game2_MazeGenerator.cs" />
     <Compile Include="Assets\Scripts\Game2_Pair.cs" />
+    <Compile Include="Assets\Scripts\Game2_PassToLeaderboard.cs" />
     <Compile Include="Assets\Scripts\Game2_Reader.cs" />
     <Compile Include="Assets\Scripts\Game2_Writer.cs" />
     <Compile Include="Assets\Scripts\GameGridLogic.cs" />
