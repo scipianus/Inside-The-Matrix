@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using System;
+using System.IO;
 
 public class GameGridLogic : MonoBehaviour {
-    public static int gridDimension = 6;
+    public static int gridDimension = 5;
     private int[,] cellNumber;
     private int[,] initialCellNumber;
     private Cell[,] cells;
@@ -18,25 +18,27 @@ public class GameGridLogic : MonoBehaviour {
 
     public int currentStep = 0;
 
-	void Start () {
+	void Start() {
         cells = new Cell[gridDimension, gridDimension];
 
         for (int i = 0; i < gridDimension; ++i)
             for (int j = 0; j < gridDimension; ++j)
                 cells[i, j] = new Cell(this, i, j);
 
+        Game2_Reader.checkLeaderboardExistance();
+        Game2_Reader.checkPathsExistance(gridDimension);
         generateCells();
     }
 
     public bool isMoveLegal(Pair<int, int> cell) {
         return (0 <= cell.fst && cell.fst < gridDimension &&
                 0 <= cell.snd && cell.snd < gridDimension &&
-                cellNumber[cell.fst, cell.snd] > 1);
+                cellNumber[cell.fst, cell.snd] >= 1);
     }
 
     public void generateCells() {
         System.Random rnd = new System.Random();
-        path = Game2_Reader.getRandomPath();
+        path = Game2_Reader.getRandomPath(gridDimension);
         cellNumber = Game2_MazeGenerator.generateMaze(gridDimension, path);
         initialCellNumber = new int[gridDimension, gridDimension];
 
@@ -48,11 +50,8 @@ public class GameGridLogic : MonoBehaviour {
         currentCell = path[0];
         endCell = path[path.Count - 1];
         for(int i = 0; i < gridDimension; ++i)
-            for (int j = 0; j < gridDimension; ++j) {
+            for (int j = 0; j < gridDimension; ++j)
                 cells[i, j].setText(cellNumber[i, j].ToString());
-               // if (path.Contains(new Pair<int, int>(i, j)))
-                //    cells[i, j].setColor(Color.cyan);
-            }
 
         cells[currentCell.fst, currentCell.snd].setColor(Color.green);
         cells[endCell.fst, endCell.snd].setColor(Color.yellow);
@@ -75,9 +74,11 @@ public class GameGridLogic : MonoBehaviour {
 
         for (int i = 0; i < gridDimension; ++i)
             for (int j = 0; j < gridDimension; ++j) {
-                if (cellNumber[i, j] > 0) {
+                if (cellNumber[i, j] >= 0) {
                     --cellNumber[i, j];
                     cells[i, j].setText(cellNumber[i, j].ToString());
+                    //if (path.Contains(new Pair<int, int>(i, j)))
+                    //    cells[i, j].setColor(Color.cyan);
                 }
             }
 
@@ -111,10 +112,8 @@ public class GameGridLogic : MonoBehaviour {
         for(int i = 0; i < gridDimension; ++i)
             for (int j = 0; j < gridDimension; ++j) {
                 cells[i, j].setText(cellNumber[i, j].ToString());
-                if(cellNumber[i,j] != 0)
+                if(cellNumber[i,j] >= 0)
                     cells[i, j].setColor(Color.red);
-              //  if (path.Contains(new Pair<int, int>(i, j)))
-               //     cells[i, j].setColor(Color.cyan);
             }
 
         cells[currentCell.fst, currentCell.snd].setColor(Color.green);

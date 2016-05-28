@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class Game2_MazeGenerator {
     private static Pair<int, int> right = new Pair<int, int>(0, 1);
@@ -52,17 +53,45 @@ public class Game2_MazeGenerator {
         return path;
     }
 
+    private static int getDistance(Pair<int, int> p1, Pair<int, int> p2) {
+        return (Math.Abs(p1.fst - p2.fst) + Math.Abs(p1.snd - p2.snd));
+    }
+
+    private static int getClosestPathIndex(List<Pair<int, int>> path, Pair<int, int> point) {
+        int min = getDistance(path[0], point);
+        int idx = 0;
+        for (int i = 1; i < path.Count; ++i) {
+            int val = Math.Min(min, getDistance(point, path[i]));
+            if (min > val) {
+                min = Math.Min(min, getDistance(point, path[i]));
+                idx = i;
+            }
+        }
+        return idx;
+    }
+
     public static int[,] generateMaze(int dimension, List<Pair<int, int>> path) {
         System.Random rnd = new System.Random();
         int[,] maze = new int[dimension, dimension];
 
         for (int i = 0; i < path.Count; ++i)
-            maze[path[i].fst, path[i].snd] = i + rnd.Next(1, 4);
+            maze[path[i].fst, path[i].snd] = i;
 
         for (int i = 0; i < dimension; ++i)
             for (int j = 0; j < dimension; ++j) {
-                if (!path.Contains(new Pair<int, int>(i, j)))
-                    maze[i, j] = rnd.Next(0, 2 * dimension);
+                Pair<int, int> point = new Pair<int, int>(i, j);
+                if (!path.Contains(point)) {
+                    int idx = getClosestPathIndex(path, point);
+                    int value = maze[path[idx].fst, path[idx].snd];
+
+                    if (idx <= path.Count / 2) {
+                        maze[i, j] = rnd.Next(0, 2 * dimension) - dimension / 2;
+                    }
+                    else {
+                        maze[i, j] = rnd.Next(0, (int)(dimension * 3.5)) - dimension;
+                    }
+                    maze[i, j] = (maze[i, j] < 0) ? -1 : maze[i, j];
+                }
             }
 
         return maze;
@@ -98,9 +127,9 @@ public class Game2_MazeGenerator {
 
         paths.Sort((x, y) => y.fst.CompareTo(x.fst));
 
-        Game2_Writer.refreshPathsFile();
+        Game2_Writer.refreshPathsFile(dimension);
         for (int i = 0; i < number; ++i) {
-            Game2_Writer.appendPathsFile(paths[i].fst, paths[i].snd);
+            Game2_Writer.appendPathsFile(paths[i].fst, paths[i].snd, dimension);
         }
     }
 }

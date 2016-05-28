@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
@@ -27,16 +26,28 @@ public class Game2_Reader {
 		return fileStream.ReadToEnd();
 	}
 
-    public static List<Pair<int, int>> getRandomPath() {
+    public static List<Pair<int, int>> getRandomPath(int dimmension) {
         List<Pair<int, int>> path = new List<Pair<int, int>>();
-        StreamReader fileStream = new StreamReader(pathsFilePath);
+        StreamReader fileStream = new StreamReader(pathsFilePath + dimmension);
         System.Random rnd = new System.Random();
-        List<string> paths = File.ReadAllLines(pathsFilePath).ToList();
+        List<string> paths = File.ReadAllLines(pathsFilePath + dimmension).ToList();
 
         int idx = rnd.Next(0, paths.Count);
         string[] parsedLine = paths[idx].Split(' ');
         for (int i = 1; i < parsedLine.Length; i += 2)
             path.Add(new Pair<int, int>(int.Parse(parsedLine[i]), int.Parse(parsedLine[i + 1])));
         return path;
+    }
+
+    public static void checkLeaderboardExistance() {
+        if (!File.Exists(leaderboardFilePath))
+            Game2_Writer.refreshLeaderboardFile();
+    }
+
+    public static void checkPathsExistance(int dimension) {
+        if (!File.Exists(pathsFilePath + dimension)) {
+            Game2_Writer.refreshPathsFile(dimension);
+            Game2_MazeGenerator.generatePaths(100, dimension);
+        }
     }
 }

@@ -68,7 +68,7 @@ public class Cell {
         if (int.TryParse(text, out number) == true) {
             if (number > 9)
                 meshRenderer.transform.localPosition -= digitPosDifference;
-            else if (number == 0) {
+            else if (number == -1) {
                 textMesh.text = "";
                 setColor(Color.grey);
             }
