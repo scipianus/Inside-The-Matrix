@@ -17,7 +17,7 @@ public class Game2_Writer {
 	private static void appenToFile(string filePath, string text) {
 		if (!File.Exists(filePath))
 			File.Create(filePath);
-		StreamWriter fileStream = File.AppendText(filePath);
+		StreamWriter fileStream = File.AppendText (filePath);
 		fileStream.WriteLine(text);
 		fileStream.Close();
 	}

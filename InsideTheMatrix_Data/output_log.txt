@@ -14,13 +14,67 @@ Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideThe
 Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.144 seconds
+- Completed reload, in  0.134 seconds
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Ciprian\Documents\GitHub\Inside-The-Matrix\InsideTheMatrix_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.766752 ms
+UnloadTime: 0.718427 ms
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 98c -> priority: 1 
+  Thread -> id: 1a64 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 11.693698 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 245.
+Total: 0.458853 ms (FindLiveObjects: 0.038487 ms CreateObjectMapping: 0.023092 ms MarkObjects: 0.381451 ms  DeleteObjects: 0.013684 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.834317 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 260.
+Total: 0.449017 ms (FindLiveObjects: 0.039342 ms CreateObjectMapping: 0.020098 ms MarkObjects: 0.372898 ms  DeleteObjects: 0.014539 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.813790 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 245.
+Total: 0.478524 ms (FindLiveObjects: 0.048322 ms CreateObjectMapping: 0.032500 ms MarkObjects: 0.380595 ms  DeleteObjects: 0.015394 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.545663 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 294.
+Total: 0.244179 ms (FindLiveObjects: 0.037631 ms CreateObjectMapping: 0.020098 ms MarkObjects: 0.172337 ms  DeleteObjects: 0.012401 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.564771 ms
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 260.
+Total: 1.278630 ms (FindLiveObjects: 0.080395 ms CreateObjectMapping: 0.085954 ms MarkObjects: 0.808231 ms  DeleteObjects: 0.301483 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+

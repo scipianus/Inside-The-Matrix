@@ -12,6 +12,11 @@ public class MazeGenerator
 		this.width = width;
 	}
 
+	/*@ public normal_behavior
+ 	@ requires height > 0
+ 	@ requires width > 0
+ 	@ ensures matrix != null;
+ 	@*/
 	public byte[,,] generateRandomMaze() {
 		matrix = new byte[height, width, 2];
 		for (int i = 0; i < height; ++i)
