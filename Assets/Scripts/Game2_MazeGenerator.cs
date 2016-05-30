@@ -29,7 +29,13 @@ public class Game2_MazeGenerator {
             directions.Remove(down);
 
         while (currentCell.snd != dimension - 1) {
-            int next = rnd.Next(0, directions.Count);
+            int next;
+            if (rnd.Next(0, 100) > 5) {
+                next = rnd.Next(0, directions.Count);
+            }
+            else {
+                next = 0;
+            }
             currentCell = new Pair<int, int>(currentCell.fst + directions[next].fst,
                                                 currentCell.snd + directions[next].snd);
             path.Add(currentCell);
@@ -59,24 +65,6 @@ public class Game2_MazeGenerator {
         return path;
     }
 
-    private static int getDistance(Pair<int, int> p1, Pair<int, int> p2) {
-        return (Math.Abs(p1.fst - p2.fst) + Math.Abs(p1.snd - p2.snd));
-    }
-
-    private static int getClosestPathIndex(List<Pair<int, int>> path, Pair<int, int> point) {
-        int min = getDistance(path[0], point);
-        int idx = 0;
-        for (int i = 1; i < path.Count; ++i) {
-            int val = Math.Min(min, getDistance(point, path[i]));
-            if (min > val) {
-                min = Math.Min(min, getDistance(point, path[i]));
-                idx = i;
-            }
-        }
-        return idx;
-    }
-
-
     /*
      @ pure
      @ requires dimension > 0
@@ -88,22 +76,13 @@ public class Game2_MazeGenerator {
         int[,] maze = new int[dimension, dimension];
 
         for (int i = 0; i < path.Count; ++i)
-            maze[path[i].fst, path[i].snd] = i;
+            maze[path[i].fst, path[i].snd] = i + rnd.Next(0, 1);
 
         for (int i = 0; i < dimension; ++i)
             for (int j = 0; j < dimension; ++j) {
                 Pair<int, int> point = new Pair<int, int>(i, j);
                 if (!path.Contains(point)) {
-                    int idx = getClosestPathIndex(path, point);
-                    int value = maze[path[idx].fst, path[idx].snd];
-
-                    if (idx <= path.Count / 2) {
-                        maze[i, j] = rnd.Next(0, 2 * dimension) - dimension / 2;
-                    }
-                    else {
-                        maze[i, j] = rnd.Next(0, (int)(dimension * 3.5)) - dimension;
-                    }
-                    maze[i, j] = (maze[i, j] < 0) ? -1 : maze[i, j];
+                    maze[point.fst, point.snd] = rnd.Next(0, 2 * (dimension - 5));
                 }
             }
 
@@ -117,24 +96,34 @@ public class Game2_MazeGenerator {
         return true;
     }
 
-	public static int evaluate(List<Pair<int, int>> path) {
-        int value = 0;
+	public static int evaluate(List<Pair<int, int>> path, int dimension) {
+        int absDiffY = Math.Abs(path[0].fst - path[path.Count - 1].fst);
+        if (absDiffY < dimension / 3 || absDiffY > dimension)
+            return -1;
 
-        value += path.Count;
-        for (int i = 2; i < path.Count; ++i)
-            if (directionChanged(path[i - 2], path[i - 1], path[i]))
-                value += 5;
+        int maxTurns = 2 + dimension / 3;
+        int distanceBetweenTurns = dimension / 4;
+        int turns = 0;
+        int lastTurn = -100;
 
-        return value;
-	}
+        for (int i = 2; i < path.Count; ++i) {
+            if (directionChanged(path[i - 2], path[i - 1], path[i])) {
+                ++turns;
+                if ((i - lastTurn <= distanceBetweenTurns) || (turns > maxTurns))
+                    return 0;
+                lastTurn = i;
+            }
+        }
+        return 1;
+    }
 
     public static void generatePaths(int number, int dimension) {
         List<Pair<int, List<Pair<int, int>>>> paths = new List<Pair<int, List<Pair<int, int>>>>();
         System.Random rnd = new System.Random();
-        int generateNumber = number * 100;
+        int generateNumber = number * 200;
         for (int i = 0; i < generateNumber; ++i) {
             List<Pair<int, int>> path = Game2_MazeGenerator.generatePath(dimension, rnd);
-            int value = evaluate(path);
+            int value = evaluate(path, dimension);
             paths.Add(new Pair<int, List<Pair<int, int>>>(value, path));
         }
 

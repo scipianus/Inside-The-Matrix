@@ -1,0 +1,60 @@
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 8850M (ID=0x6823)
+    Vendor:   ATI
+    VRAM:     2026 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.058 seconds
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\GameBuild_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.768921 ms
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2cb0 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.382163 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 255.
+Total: 0.438772 ms (FindLiveObjects: 0.038916 ms CreateObjectMapping: 0.020955 ms MarkObjects: 0.366927 ms  DeleteObjects: 0.010691 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.643619 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 326.
+Total: 0.434068 ms (FindLiveObjects: 0.027797 ms CreateObjectMapping: 0.020527 ms MarkObjects: 0.358374 ms  DeleteObjects: 0.026942 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.733991 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 271.
+Total: 0.490519 ms (FindLiveObjects: 0.152672 ms CreateObjectMapping: 0.015395 ms MarkObjects: 0.308338 ms  DeleteObjects: 0.013684 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+

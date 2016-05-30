@@ -1,0 +1,238 @@
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 8850M (ID=0x6823)
+    Vendor:   ATI
+    VRAM:     2026 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.355 seconds
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\catalin\Documents\GitHub\Inside-The-Matrix\aa_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.892086 ms
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 166c -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 11.928985 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 245.
+Total: 0.511902 ms (FindLiveObjects: 0.046186 ms CreateObjectMapping: 0.030791 ms MarkObjects: 0.422094 ms  DeleteObjects: 0.011974 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.860012 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 260.
+Total: 0.451175 ms (FindLiveObjects: 0.039771 ms CreateObjectMapping: 0.026514 ms MarkObjects: 0.372059 ms  DeleteObjects: 0.011546 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.430647 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 245.
+Total: 0.408837 ms (FindLiveObjects: 0.025659 ms CreateObjectMapping: 0.014967 ms MarkObjects: 0.360940 ms  DeleteObjects: 0.006414 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.699214 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 284.
+Total: 0.452458 ms (FindLiveObjects: 0.038488 ms CreateObjectMapping: 0.060726 ms MarkObjects: 0.331004 ms  DeleteObjects: 0.021382 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.727722 ms
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 260.
+Total: 0.788166 ms (FindLiveObjects: 0.047041 ms CreateObjectMapping: 0.044903 ms MarkObjects: 0.493512 ms  DeleteObjects: 0.201425 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.636349 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 245.
+Total: 0.377190 ms (FindLiveObjects: 0.026514 ms CreateObjectMapping: 0.016250 ms MarkObjects: 0.324589 ms  DeleteObjects: 0.008980 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.543976 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 294.
+Total: 0.368210 ms (FindLiveObjects: 0.029080 ms CreateObjectMapping: 0.025231 ms MarkObjects: 0.300213 ms  DeleteObjects: 0.013257 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.184457 ms
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 260.
+Total: 1.058016 ms (FindLiveObjects: 0.056878 ms CreateObjectMapping: 0.058160 ms MarkObjects: 0.674838 ms  DeleteObjects: 0.267283 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.570063 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 245.
+Total: 0.363078 ms (FindLiveObjects: 0.030791 ms CreateObjectMapping: 0.021810 ms MarkObjects: 0.300640 ms  DeleteObjects: 0.008553 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+The referenced script on this Behaviour (Game Object 'Main Camera') is missing!
+ 
+(Filename:  Line: 1655)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.550818 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 325.
+Total: 0.472985 ms (FindLiveObjects: 0.031218 ms CreateObjectMapping: 0.020955 ms MarkObjects: 0.393441 ms  DeleteObjects: 0.026514 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+The referenced script on this Behaviour (Game Object 'Main Camera') is missing!
+ 
+(Filename:  Line: 1655)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.170200 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 335.
+Total: 0.738131 ms (FindLiveObjects: 0.203135 ms CreateObjectMapping: 0.031218 ms MarkObjects: 0.495223 ms  DeleteObjects: 0.007270 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.156659 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 270.
+Total: 0.455024 ms (FindLiveObjects: 0.110334 ms CreateObjectMapping: 0.016678 ms MarkObjects: 0.315181 ms  DeleteObjects: 0.011974 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.713327 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 228.
+Total: 0.392586 ms (FindLiveObjects: 0.032501 ms CreateObjectMapping: 0.021810 ms MarkObjects: 0.327583 ms  DeleteObjects: 0.009408 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.539699 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 244.
+Total: 0.315608 ms (FindLiveObjects: 0.021382 ms CreateObjectMapping: 0.013684 ms MarkObjects: 0.276264 ms  DeleteObjects: 0.003848 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.677398 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 273.
+Total: 0.855308 ms (FindLiveObjects: 0.054312 ms CreateObjectMapping: 0.034639 ms MarkObjects: 0.744545 ms  DeleteObjects: 0.019244 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.607696 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 228.
+Total: 0.414396 ms (FindLiveObjects: 0.029508 ms CreateObjectMapping: 0.021382 ms MarkObjects: 0.351959 ms  DeleteObjects: 0.009836 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.987025 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 283.
+Total: 1.557088 ms (FindLiveObjects: 0.053029 ms CreateObjectMapping: 0.035067 ms MarkObjects: 1.454879 ms  DeleteObjects: 0.012401 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.457162 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 270.
+Total: 0.407554 ms (FindLiveObjects: 0.023948 ms CreateObjectMapping: 0.011974 ms MarkObjects: 0.363078 ms  DeleteObjects: 0.008125 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.280396 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 249.
+Total: 1.008408 ms (FindLiveObjects: 0.055167 ms CreateObjectMapping: 0.042765 ms MarkObjects: 0.888665 ms  DeleteObjects: 0.019244 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.593156 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 270.
+Total: 0.434068 ms (FindLiveObjects: 0.019672 ms CreateObjectMapping: 0.014540 ms MarkObjects: 0.388309 ms  DeleteObjects: 0.010691 ms)
+
+Audio Source (UnityEngine.AudioSource)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
