@@ -42,7 +42,6 @@ public class GameGridLogic : MonoBehaviour {
         cellNumber = Game2_MazeGenerator.generateMaze(gridDimension, path);
         initialCellNumber = new int[gridDimension, gridDimension];
 
-        //Preserver the initial cell numbers in another array
         for(int i = 0; i < gridDimension; i++)
             for(int j = 0; j < gridDimension; j++)
                 initialCellNumber[i, j] = cellNumber[i, j];    
@@ -60,7 +59,7 @@ public class GameGridLogic : MonoBehaviour {
     public void endGame() {
         time = Time.timeSinceLevelLoad;
         GameOverVisibility gameScreen =  GameOverScreen.GetComponent<GameOverVisibility>();
-        // Take into consideration the size of the grid when computing the penalty for extra steps
+        // Take into consideration the size of the path when computing the penalty for extra steps
         float stepScaler = currentStep - path.Count + 20;
         float timeScaler = ((15 - time) > 0) ? 15 - time : 0; 
         float score = timeScaler + stepScaler;
